@@ -5,7 +5,7 @@ import "./index.css";
 
 const launchHeader = () => {
   import("home/mountHeader").then((mountHeader) => {
-    mountHeader.default("#header");
+    mountHeader.default("#header", { foobar: "baz" });
   });
 };
 

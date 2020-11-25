@@ -8,8 +8,18 @@ header {
 }
 </style>
 
+<script>
+export default {
+  computed: {
+    foobar() {
+      return this.props ? this.props.foobar : "";
+    }
+  }
+}
+</script>
+
 <template>
 <header>
-  !!!Spot's A Good Dog!!!
+  !!!Spot's A Good Dog!!! - {{ foobar }}
 </header>
 </template>
